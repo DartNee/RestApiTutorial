@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:weightSum="1"
+        >
+        <EditText
+            android:id="@+id/page_input_edit_text"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:hint="페이지 넘버 입력"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/get_method_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="겟 메소드 api"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/post_method_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="포스트 메소드 api"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <EditText
+            android:id="@+id/user_id_input_edit_text"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:hint="유저 아이디 입력"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/put_method_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="풋 메소드 api"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/delete_method_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="딜리트 메소드 api"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>

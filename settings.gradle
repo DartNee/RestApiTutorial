@@ -1,0 +1,2 @@
+rootProject.name='RestApiTutorial'
+include ':app'
